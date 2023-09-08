@@ -23,9 +23,9 @@ The steps I took for data preprocessing are:
 ## 2. Splitting the dataset
 
 We need three sets for CNN training: 
-1) training set (for training a machine learning model) - I used 70% of the images
-2) validation set (for monitoring training progress and preventing overfitting) - 15% of the images
-3) test set (for testing the overall performance of a model) - 15% of the images
+1) training set (for training a machine learning model) - 70% (619 images)
+2) validation set (for monitoring training progress and preventing overfitting) - 15% (136 images)
+3) test set (for testing the overall performance of a model) - 15% (134 images)
 
 ## 3. Building a model
 
@@ -40,6 +40,12 @@ The CNN model is specifically used for classifying images. It has different laye
 7) Output layer produces class probabilities for each space object category
 
 The model is compiled with categorical cross-entropy loss function and I chose the Adam optimizer as the evaluation metric.
+
+## 4. Results and fine-tuning
+
+Unfortunately, the results aren't very good. For the batch size of 32 and 10 epochs, the test accuracy varies from 39% to 45%. This, however, could be fixed with fine-tuning or even expanding/changing the dataset. I added "early stopping" to prevent overfitting. I tried adding batch normalization, but then the accuracy significantly dropped to 25%. Adding or removing layers didn't really make a difference.
+
+However, this is how it would work in theory. As for fine-tuning and getting a better accuracy, I am open to suggestions. :)
 
 
 
