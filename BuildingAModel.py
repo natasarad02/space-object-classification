@@ -84,5 +84,3 @@ print("Test accuracy: ", test_acc)
 
 model.save('AstroImage_classification_model.h5')
 
-#with open('model_history.pkl', 'wb') as file:
-#    pickle.dump(history.history, file)
