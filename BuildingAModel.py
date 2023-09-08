@@ -63,9 +63,9 @@ model.summary()
 batch_size = 32
 epochs = 10
 
-train_set = 'C:/Users/Nata/PycharmProjects/AstroClassification/preprocessed_split/train/'
-test_set = 'C:/Users/Nata/PycharmProjects/AstroClassification/preprocessed_split/test/'
-val_set = 'C:/Users/Nata/PycharmProjects/AstroClassification/preprocessed_split/validation/'
+train_set = 'your path to train directory'
+test_set = 'your path to test directory'
+val_set = 'your path to validation directory'
 
 train_gen = ImageDataGenerator(rescale=1./255)
 val_gen = ImageDataGenerator(rescale=1./255)
