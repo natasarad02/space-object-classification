@@ -2,8 +2,8 @@ import os
 import shutil
 from sklearn.model_selection import train_test_split
 
-source = 'path to preprocessed files directory'
-output = 'path to preprocessed split directory'
+source = 'your path to preprocessed files directory'
+output = 'your path to preprocessed split directory'
 
 # Defining ratios
 train_ratio = 0.7
