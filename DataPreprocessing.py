@@ -3,8 +3,8 @@ import os
 from PIL import Image
 import numpy as np
 
-source_directory = 'path to the dataset directory'
-destination = 'path to the preprocessed directory'
+source_directory = 'your path to the dataset directory'
+destination = 'your path to the preprocessed directory'
 
 target_size = (224, 224)
 
